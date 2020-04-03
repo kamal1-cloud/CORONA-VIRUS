@@ -42,15 +42,22 @@ body {
     position: absolute;
     right: 40px;
     top: 48px;
-    width: 80px;
+    width: 90px;
     height: 40px;
     border-radius: 15px;
     -webkit-border-radius: 15px;
     -moz-border-radius: 15px;
     -ms-border-radius: 15px;
     -o-border-radius: 15px;
+    
     &--link{
         text-decoration: none;
+        padding-bottom: 12px;
+        font-weight: bolder;
+        font-size: large;
+    }
+    &--img{
+        padding-left: 9px;
     }
 }
 
@@ -75,16 +82,16 @@ body {
 &__1{
     position: absolute;
     top: 175px;
-   right: 32%;
+   right: 28%;
    font-weight: 900;
-   width: 600px;
+   width: 700px;
    text-align: center;
    line-height: 28px;
 }
 &__2{
     position: absolute;
     top: 236px;
-    right: 34%;
+    right: 28%;
    font-weight: 900;
    text-align: center;
   
@@ -121,7 +128,7 @@ body {
         text-align: center;
         color: #7F7F7F;
         font-size: xx-large;
-        padding-left: 10%;
+       left: 10%;
         margin: 0;
         padding-top: 2%;
     }
@@ -130,7 +137,7 @@ body {
         text-align: center;
         color: #7F7F7F;
         font-size: xx-large;
-        padding-left: 10%;
+       left: 10%;
         margin: 0;
         padding-top: 2%;
     }
@@ -138,7 +145,7 @@ body {
         text-align: center;
         color: #7F7F7F;
         font-size: xx-large;
-        padding-left: 10%;
+       left: 10%;
         padding-top: 2%;
         margin: 0;
     }
@@ -146,7 +153,7 @@ body {
         text-align: center;
         color: #7F7F7F;
         font-size: xx-large;
-        padding-left: 10%;
+       left: 10%;
         margin: 0;
         padding-top: 2%;
         padding-bottom: 2%;
@@ -183,6 +190,9 @@ body {
           margin-left: 40%;
          &--under{
              margin: 0;
+             font-weight: bolder;
+             font-size: large;
+             padding-top: 15px;
          }
         }
        
@@ -191,7 +201,13 @@ body {
         grid-row: 2;
         margin-left: 30%;
         margin-top: 7%;
-        
+        width: 60%;
+        &--under{
+           width: 60%;
+           font-weight: bolder;
+           font-size: large;
+           padding-top: 15px;
+        }
        }
        &__item3{
         grid-column: 2;
@@ -199,6 +215,9 @@ body {
         margin-left: 40%;
         &--under{
             margin: 0;
+            font-weight: bolder;
+            font-size: large;
+            padding-top: 15px;
         }
        }
        &__item4{
@@ -207,8 +226,12 @@ body {
         margin-left: 40%;
         margin-top: 13%;
         &--under{
+            
             margin: 0;
             padding: 0;
+            font-weight: bolder;
+            font-size: large;
+            padding-top: 15px;
         }
        }
       
@@ -271,7 +294,7 @@ body {
 }
 .section4{
     background-color: #96C5DC;
-    height: 55vh;
+    height: 32vh;
     &__title{
         text-align: center;
         color: #1078AD;
@@ -314,21 +337,42 @@ footer{
    }
    .footer{
        display: flex;
-      justify-content: space-around;
-      &__blue{
-        background-color: #1078AD;
-    }
+       justify-content: space-around;
+      
        &__column1{
-           margin-bottom: 5%;
+          
            &--button{
+              
+               width: 94px;
+               height: 40px;
                border: 1px solid #1078AD;
                background-color: #fff;
                border-radius: 15px;
-               -webkit-border-radius: 15px;
+               -webkit-border-radius: 10px;
                -moz-border-radius: 15px;
                -ms-border-radius: 15px;
                -o-border-radius: 15px;
+               box-sizing: border-box;
+               
+            
                  }
+                 &--para{
+                    display: inline;
+                    text-align: center;
+                    padding-left: 10px;
+                    padding-bottom: 30px;
+                    font-weight: bolder;
+                  
+                 }
+                
+                 &--img{
+                    display: inline-block;
+                    padding-top: 8px;
+                    padding-left: 10px;
+                  
+               }  
+         
+                 
                  &--p1{
                      color: #1078AD;
                      font-weight: bolder;
@@ -342,7 +386,6 @@ footer{
        }
 
     &__column2{
-        margin-bottom: 10%;
         text-align: center;
         &--title{
             margin: 0;
@@ -366,4 +409,5 @@ footer{
     }
     
    }
+  
 }
