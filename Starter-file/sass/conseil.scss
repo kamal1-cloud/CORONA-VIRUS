@@ -2,6 +2,13 @@
 $primary-color: #1078AD;
 $second-color: #1A519E;
 $third-color: #d0e5f0;
+$mobile:400px;
+@mixin mobile {
+    @media (max-width: #{$mobile}) {
+        @content;
+    }
+}
+
 .conseil{
     &__title{
         text-align: center;
@@ -69,6 +76,8 @@ $third-color: #d0e5f0;
    display: flex;
    justify-content: space-around;
    background-color: $third-color;
+   flex-wrap: wrap;
+  
    &__part1{
        &--title{
            color: $primary-color;
@@ -112,6 +121,9 @@ $third-color: #d0e5f0;
         -moz-border-radius: 5px;
         -ms-border-radius: 5px;
         -o-border-radius: 5px;
+        @include mobile(){
+            margin-bottom: 13%;
+        }
        }
  }
 }
@@ -126,6 +138,7 @@ $third-color: #d0e5f0;
     &__items{
         display: flex;
         justify-content: space-evenly;
+        flex-wrap: wrap;
        
        
         &--img1{

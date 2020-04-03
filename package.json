@@ -6,8 +6,8 @@
   "scripts": {
     "compile": "node-sass Starter-file/sass -o Starter-file/dist/css",
     "watch": "node-sass -w Starter-file/sass -o Starter-file/dist/css",
-    "concat": "concat -o Starter/dist/css/concat.css Starter/dist/css/main.css Starter/dist/css/fichier.css Starter/dist/css/additional.css",
-    "prefix": "postcss Starter/dist/css/style.concat.css --use=autoprefixer --map=false --output=Starter/dist/css/style.prefix.css",
+    "concat": "concat -o Starter/dist/css/style.css Starter/dist/css/main.css Starter/dist/css/fichier.css Starter/dist/css/additional.css",
+    "prefix": "postcss --watch Starter/dist/css/fichier.css --watch Starter/dist/css/main.css --use=autoprefixer --map=false -d Starter/dist/css/style.prefix.css",
     "compress": "node-sass Starter/dist/css/style.prefix.css Starter/dist/css/style.css --output-style compressed",
     "build-css": "npm-run-all compile concat prefix compress"
   },
