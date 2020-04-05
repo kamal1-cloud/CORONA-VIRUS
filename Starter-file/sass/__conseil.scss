@@ -1,4 +1,6 @@
+/***************************************************************************************************************************************************/
 
+/******************************************************************DUBET SECTION CONSEIL*****************************************************************/
 .conseil{
     &__title{
         text-align: center;
@@ -8,12 +10,14 @@
 .container{
     .card1{
         display: flex;
-       justify-content: space-around;
+        flex-direction: row;
+       justify-content: space-evenly;
        flex-wrap: wrap;
        margin-top: 5%;
        &__item1{
         text-align: center;
-       margin-top: 35px;
+      margin-top: 37px;
+  padding-left: 40px;
        font-weight: bolder;
        font-size: large ;
        color: $second-color;
@@ -23,6 +27,8 @@
         font-weight: bolder;
         font-size: large ;
         color: $second-color;
+        width: 400px;
+        margin-top: -10px;
        }
        &__item3{
         text-align: center;
@@ -34,13 +40,16 @@
     .card2{
         margin-top: 4%;
         display: flex;
+        flex-direction: row;
        justify-content: space-around;
        flex-wrap: wrap;
        &__item{
+      
         text-align: center;
         font-weight: bolder;
         font-size: large ;
         color: $second-color;
+        
        }
     }
   .card3{
@@ -59,8 +68,9 @@
    
 }
 }
-/**********************************************************************/
-                    //section informations//
+/********************************************************************************************************************************************************************************/
+
+//*******************************************************************************section informations*****************************************************************************//
 
 .info{
    display: flex;
@@ -82,7 +92,7 @@
        }
    }
  &__part2{
-    margin-top: 3%;
+    margin-top: 5%;
      &--button1{
      border: 1px solid $second-color;
      background-color: $second-color;
@@ -98,7 +108,7 @@
 }
  }
  &__part3{
-    margin-top: 3%;
+    margin-top: 5%;
     &--button2{
         border: 1px solid $second-color;
         background-color: $second-color;
@@ -117,8 +127,10 @@
        }
  }
 }
-/***********************************************************************************************/
-                      //section transmet//
+/*****************************************************************************************************************************************************************************************************/
+
+
+//******************************************************************************section transmet**********************************************************************************//
 .transmet{
     &__title{
         text-align: center;

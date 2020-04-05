@@ -4,6 +4,7 @@ body {
   font-family: cairo,sans-serif;
 }
 
+/****************************************************************HERO HERDER**********************************************************************/
 .header {
   position: relative;
 }
@@ -180,6 +181,8 @@ body {
   }
 }
 
+/******************************************************************FIN HERO HEADER*********************************************************************/
+/*****************************************************************DEBUT 2EME PARTIE HEADER*******************************************************************************/
 .part3 {
   display: flex;
 }
@@ -677,6 +680,8 @@ footer .footer__column3--list {
   }
 }
 
+/***************************************************************************************************************************************************/
+/******************************************************************DUBET SECTION CONSEIL*****************************************************************/
 .conseil__title {
   text-align: center;
   color: #1078AD;
@@ -684,14 +689,16 @@ footer .footer__column3--list {
 
 .conseil .container .card1 {
   display: flex;
-  justify-content: space-around;
+  flex-direction: row;
+  justify-content: space-evenly;
   flex-wrap: wrap;
   margin-top: 5%;
 }
 
 .conseil .container .card1__item1 {
   text-align: center;
-  margin-top: 35px;
+  margin-top: 37px;
+  padding-left: 40px;
   font-weight: bolder;
   font-size: large;
   color: #1A519E;
@@ -702,6 +709,8 @@ footer .footer__column3--list {
   font-weight: bolder;
   font-size: large;
   color: #1A519E;
+  width: 400px;
+  margin-top: -10px;
 }
 
 .conseil .container .card1__item3 {
@@ -714,6 +723,7 @@ footer .footer__column3--list {
 .conseil .container .card2 {
   margin-top: 4%;
   display: flex;
+  flex-direction: row;
   justify-content: space-around;
   flex-wrap: wrap;
 }
@@ -740,7 +750,7 @@ footer .footer__column3--list {
   color: #1A519E;
 }
 
-/**********************************************************************/
+/********************************************************************************************************************************************************************************/
 .info {
   display: flex;
   justify-content: space-around;
@@ -762,7 +772,7 @@ footer .footer__column3--list {
 }
 
 .info__part2 {
-  margin-top: 3%;
+  margin-top: 5%;
 }
 
 .info__part2--button1 {
@@ -780,7 +790,7 @@ footer .footer__column3--list {
 }
 
 .info__part3 {
-  margin-top: 3%;
+  margin-top: 5%;
 }
 
 .info__part3--button2 {
@@ -803,7 +813,7 @@ footer .footer__column3--list {
   }
 }
 
-/***********************************************************************************************/
+/*****************************************************************************************************************************************************************************************************/
 .transmet__title {
   text-align: center;
   color: #1A519E;
