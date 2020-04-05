@@ -1,0 +1,102 @@
+/***************************************************SECTION 2 SECTION 2 PAGE D'ACCEUIL************************************************/
+.section2{
+    &__title{
+        text-align: center;
+    }
+    .card{
+       display: grid;
+       grid-template-columns: 35% 35%;
+       grid-template-rows: 2;
+       justify-content: center;
+       margin-top: 6%;
+       @include mobile(){
+        grid-template-columns: 90%;
+        grid-template-rows: 1fr 1fr 1fr 1fr ;
+    }
+       
+       &__item1{
+          grid-column: 1;
+          grid-row: 1;
+          margin-left: 40%;
+          @include mobile(){
+            margin-left: 42%; 
+            margin-top: 10%;
+          }
+         
+         &--under{
+             margin: 0;
+             font-weight: bolder;
+             font-size: large;
+             padding-top: 15px;
+           
+         }
+        }
+       
+       &__item2{
+        grid-column: 1;
+        grid-row: 2;
+        margin-left: 30%;
+        margin-top: 7%;
+        width: 60%;
+        @include mobile(){
+            width: 100%;
+            margin-left: 0%;
+            margin-top: 7%;
+            text-align: center;
+         }
+        &--under{
+           width: 60%;
+           font-weight: bolder;
+           font-size: large;
+           padding-top: 15px;
+           @include mobile(){
+            width: 100%;
+           }
+          
+        }
+       }
+       &__item3{
+        grid-column: 2;
+        grid-row: 1;
+        margin-left: 40%;
+        @include mobile(){
+            grid-column: 1; 
+            grid-row: 3;  
+            margin-left: 2%;
+            margin-top: 13%;
+            text-align: center;
+        }
+        &--under{
+            margin: 0;
+            font-weight: bolder;
+            font-size: large;
+            padding-top: 15px;
+            
+        }
+       }
+       &__item4{
+        grid-column: 2;
+        grid-row: 2;
+        margin-left: 40%;
+        margin-top: 13%;
+        @include mobile(){
+            grid-column: 1; 
+            grid-row: 4; 
+            margin-left: 26%;
+           
+        }
+        &--under{
+            
+            margin: 0;
+            padding: 0;
+            font-weight: bolder;
+            font-size: large;
+            padding-top: 15px;
+           
+        }
+       }
+      
+    
+    }
+
+}
