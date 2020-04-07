@@ -1,0 +1,197 @@
+////////////////////////////////////////////////////////////SECTION 4 ET FOOTER/////////////////////////////////////////////////////////////////////////
+/***************************************************************SECTION 4 SECTION 4********************************************************************/
+.section4{
+    background-color: #96C5DC;
+    height: 29vh;
+    @include mobile{
+        height: 33vh;
+    }
+   
+    &__title{
+        text-align: center;
+        color: #1078AD;
+        margin: 0;
+        padding-top: 1%;
+    }
+    &__emoji{
+        padding-top: 20px;
+        padding-bottom: 20px;
+        display: block;
+        margin-left:auto;
+        margin-right: auto;
+    }
+    &__button{
+        width: 380px;
+        border: 2px solid #1078AD;
+        
+        height: 50px;
+        display: block;
+        margin-left:auto;
+        margin-right: auto;
+        border-radius: 10px;
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        -ms-border-radius: 10px;
+        -o-border-radius: 10px;
+        color: #fff;
+        font-weight: bolder;
+        font-size: large;
+        @include mobile()
+{
+           width: 90%;
+        }
+        
+}
+}
+//////////////////////////////////////////////////////////////////FOOTER FOOTER FOOTER///////////////////////////////////////////////////////////////////////////
+footer{
+   .logo{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+     padding-top: 2%;
+     margin-bottom: 2%;
+   }
+   .footer{
+       display: flex;
+       justify-content: space-around;
+       flex-wrap: wrap;
+
+
+       &__column1{
+         @include mobile(){
+             width: 70px;
+             margin-top: 2%;
+            
+         }
+         
+           &--button{
+              
+               width: 94px;
+               height: 40px;
+               border: 1px solid #1078AD;
+               background-color: #fff;
+               border-radius: 15px;
+               -webkit-border-radius: 10px;
+               -moz-border-radius: 15px;
+               -ms-border-radius: 15px;
+               -o-border-radius: 15px;
+               box-sizing: border-box;
+               
+            
+                 }
+                 &--para{
+                    display: inline;
+                    text-align: center;
+                    padding-left: 10px;
+                    padding-bottom: 30px;
+                    font-weight: bolder;
+                  
+                 }
+                
+                 &--img{
+                    display: inline-block;
+                    padding-top: 8px;
+                    padding-left: 10px;
+                  
+               }  
+         
+                 
+                 &--p1{
+                     color: #1078AD;
+                     font-weight: bolder;
+                     font-size: large;
+                     @include mobile(){
+                     text-align: center;
+                    }
+                 }
+                 &--p2{
+                    
+                    font-weight: bolder;
+                    font-size: large;
+                    @include mobile(){
+                        text-align: center;
+                       }
+                }
+       }
+
+    &__column2{
+        text-align: center;
+        @include mobile(){
+            width: 60%;
+            text-align: center;
+            margin-left: 1%;
+        }
+        
+        &--title{
+             margin: 0;
+             color: #1078AD;
+             font-weight: bolder;
+             font-size: large;
+             text-align: center;
+        }
+        &--p1{
+            font-size: smaller;
+        }
+        &--num{
+            color: #369D53;
+            font-weight: bolder;
+        }
+
+    }
+
+    &__column3{
+     
+        &--list{
+            list-style: none;
+            line-height: 30px;
+            color: #7F7F7F;
+            font-size: 14px;
+            @include mobile(){
+               padding: 0 6px 0 6px;
+               text-align: center;
+            }
+        
+    }
+        &--list1{
+            @include mobile(){
+                display: inline;
+               
+        }
+            
+        }
+        &--list2{
+            @include mobile(){
+                display: inline;
+               
+        }
+    }
+        &--list3{
+            @include mobile(){
+                display: inline;
+               
+        }
+    }
+        &--list4{
+            @include mobile(){
+                display: inline;
+               
+        }
+        }
+    
+    }
+    
+   }
+  
+}
+.bleu{
+    position: relative;
+    width: 100%;
+    height: 30px;
+    top: 90px;
+    @include mobile(){
+        width: 100%;
+        top: 30px;
+
+    }
+}

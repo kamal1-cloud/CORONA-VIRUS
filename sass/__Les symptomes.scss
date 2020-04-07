@@ -1,0 +1,126 @@
+/***************************************************SECTION 2 SECTION 2 PAGE D'ACCEUIL************************************************/
+.section2{
+    
+    &__title{
+        text-align: center;
+    }
+    .card{
+       display: grid;
+       grid-template-columns: 35% 35%;
+       grid-template-rows: 1fr 1fr;
+       justify-content: center;
+       margin-top: 6%;
+       @include mobile{
+        grid-template-columns: 48% 48%;
+        grid-template-rows: 1fr 1fr;
+       }
+
+       
+       &__item1{
+          grid-column: 1;
+          grid-row: 1;
+          margin-left: 40%;
+          @include mobile(){
+            margin-left: auto;
+            margin-right: auto;
+            padding-top: 20px;
+             img{
+               
+                height: 100px;
+            }
+              }
+          
+         
+         &--under{
+             margin: 0;
+             font-weight: bolder;
+             font-size: large;
+             padding-top: 15px;
+           
+         }
+        }
+       
+       &__item2{
+        grid-column: 1;
+        grid-row: 2;
+        margin-left: 30%;
+        margin-top: 7%;
+        width: 60%;
+        @include mobile(){
+            margin-left: auto;
+            margin-right: auto;
+            img{
+                width: 100px;
+                height: 100px;
+            }
+         }
+
+        &--under{
+           width: 90%;
+           font-weight: bolder;
+           font-size: large;
+           padding-top: 15px;
+          text-align: center;
+          @include mobile{
+            padding-top: 7px;
+            text-align: center;
+           
+          }
+          
+          
+        }
+       }
+       &__item3{
+        grid-column: 2;
+        grid-row: 1;
+        margin-left: 40%;
+        @include mobile(){
+            img{
+                width: 80px;
+                height: 80px;
+            }
+            width: 90%;
+            margin-left:20px;
+            margin-right: auto;
+            text-align: center;
+            padding-top: 35px;
+        }
+        &--under{
+            margin: 0;
+            font-weight: bolder;
+            font-size: large;
+            padding-top: 15px;
+            width: 70%;
+        }
+       }
+       &__item4{
+        grid-column: 2;
+        grid-row: 2;
+        margin-left: 40%;
+        margin-top: 13%;
+        @include mobile(){
+            margin-left: 40px;
+            margin-right: auto;
+            padding-bottom: 10px;
+       img{
+        width: 100px;
+        height: 100px;
+    }
+           
+        }
+        &--under{
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            font-weight: bolder;
+            font-size: large;
+            padding-top: 15px;
+            width: 90%;
+           
+        }
+       }
+      
+    
+    }
+
+}
