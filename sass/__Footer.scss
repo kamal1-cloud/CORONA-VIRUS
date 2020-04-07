@@ -6,6 +6,9 @@
     @include mobile{
         height: 33vh;
     }
+    @include tablet{
+        height: 18vh;
+    }
    
     &__title{
         text-align: center;
@@ -63,6 +66,10 @@ footer{
              width: 70px;
              margin-top: 2%;
             
+         }
+         @include tablet{
+            margin-top: 1%;
+           
          }
          
            &--button{
@@ -151,6 +158,9 @@ footer{
                padding: 0 6px 0 6px;
                text-align: center;
             }
+            @include tablet{
+                text-align: center;
+            }
         
     }
         &--list1{
@@ -158,12 +168,18 @@ footer{
                 display: inline;
                
         }
+        @include tablet{
+            display: inline;
+        }
             
         }
         &--list2{
             @include mobile(){
                 display: inline;
-               
+               margin-right: 10%;
+        }
+        @include tablet{
+            display: inline;
         }
     }
         &--list3{
@@ -176,6 +192,9 @@ footer{
             @include mobile(){
                 display: inline;
                
+        }
+        @include tablet{
+            display: inline;
         }
         }
     

@@ -2,7 +2,7 @@ $primary-color: #1078AD;
 $second-color: #1A519E;
 $third-color: #d0e5f0;
 $mobile:400px;
-
+$tablette:1024px;
 
 @mixin mobile {
     @media (max-width: #{$mobile}) {
@@ -10,6 +10,11 @@ $mobile:400px;
     }
 }
 
+@mixin tablet {
+  @media (min-width: #{$mobile}) and (max-width: #{$tablette}) {
+    @content;
+  }
+}
 
 body {
     margin: 0;
