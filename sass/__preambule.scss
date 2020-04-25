@@ -1,0 +1,31 @@
+.preambule{
+    &__container{
+    max-width: 80%;
+    background-color: #96C5DC;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 15px;
+
+
+    &--title{
+        text-align: center;
+    }
+    &--para1{
+        text-align: center;
+    }
+    &--para2{
+        text-align: center;
+    }
+}
+&__btn{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 400px;
+    height: 45px;
+    
+    margin-top: 15px;
+}
+  
+}

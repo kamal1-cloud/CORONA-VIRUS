@@ -3,13 +3,16 @@
     
     &__title{
         text-align: center;
+        color: #1078AD;
+        font: Bold 35px/px Cairo;
     }
     .card{
        display: grid;
-       grid-template-columns: 35% 35%;
-       grid-template-rows: 1fr 1fr;
+       grid-template-columns: 50% 50%;
+       grid-template-rows: 3fr 4fr;
        justify-content: center;
        margin-top: 6%;
+       margin-bottom: 70px;
        @include mobile{
         grid-template-columns: 48% 48%;
         grid-template-rows: 1fr 1fr;
@@ -19,23 +22,37 @@
        &__item1{
           grid-column: 1;
           grid-row: 1;
-          margin-left: 40%;
-          @include mobile(){
+         display: block;
+         margin-left: auto;
+         margin-right: auto;
+        
+         img{
+            width: auto;
+            height: 22vh;
+            display: block;
             margin-left: auto;
             margin-right: auto;
-            padding-top: 20px;
+        }
+          @include mobile(){
+           
+            padding-top: 17px;
              img{
                
-                height: 100px;
+                height: 88px;
             }
               }
           
          
          &--under{
-             margin: 0;
-             font-weight: bolder;
-             font-size: large;
-             padding-top: 15px;
+            font-size: 25px;
+            font-weight: 700;
+            color: #1078AD;
+            margin: 7px 0 0 0;
+             
+            @include mobile{
+                font-size: 20px;
+         
+            }
            
          }
         }
@@ -43,27 +60,43 @@
        &__item2{
         grid-column: 1;
         grid-row: 2;
-        margin-left: 30%;
-        margin-top: 7%;
-        width: 60%;
+        display: block;
+         margin-left: auto;
+         margin-right: auto;
+         margin-top: 65px;
+         img{
+            width: auto;
+            height: 20vh;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
         @include mobile(){
             margin-left: auto;
             margin-right: auto;
+            margin-top: 24px;
             img{
-                width: 100px;
-                height: 100px;
+                width: 80px;
+                height: 80px;
             }
          }
 
         &--under{
-           width: 90%;
-           font-weight: bolder;
-           font-size: large;
-           padding-top: 15px;
-          text-align: center;
+            text-align: center;
+            font-size: 25px;
+            font-weight: 700;
+            letter-spacing: 0;
+            color: #1078AD;
+            margin: 7px 0 0 0;
+
           @include mobile{
             padding-top: 7px;
             text-align: center;
+            font-size: 19px;
+            width: 80%;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
            
           }
           
@@ -73,50 +106,81 @@
        &__item3{
         grid-column: 2;
         grid-row: 1;
-        margin-left: 40%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 12px;
+        img{
+            width: auto;
+            height: 18vh;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
         @include mobile(){
             img{
-                width: 80px;
-                height: 80px;
+                width: 73px;
+                height: 73px;;
             }
             width: 90%;
-            margin-left:20px;
+            // margin-left:20px;
             margin-right: auto;
             text-align: center;
-            padding-top: 35px;
+            padding-top: 22px;
         }
         &--under{
-            margin: 0;
-            font-weight: bolder;
-            font-size: large;
-            padding-top: 15px;
-            width: 70%;
+            text-align: center;
+            font-size: 25px;
+            font-weight: 700;
+            letter-spacing: 0;
+            color: #1078AD;
+            margin: 7px 0 0 0;
+            @include mobile {
+                font-size: 19px; 
+            }
+
         }
        }
        &__item4{
         grid-column: 2;
         grid-row: 2;
-        margin-left: 40%;
-        margin-top: 13%;
-        @include mobile(){
-            margin-left: 40px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 65px;
+        img{
+            width: auto;
+            height: 20vh;
+            display: block;
+            margin-left: auto;
             margin-right: auto;
-            padding-bottom: 10px;
+        }
+        @include mobile(){
+            margin-top: 30px;
        img{
-        width: 100px;
-        height: 100px;
+        width: 80px;
+        height: 80px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
     }
            
         }
         &--under{
-            text-align: center;
-            margin: 0;
-            padding: 0;
-            font-weight: bolder;
-            font-size: large;
-            padding-top: 15px;
-            width: 90%;
-           
+             text-align: center;
+            font-size: 25px;
+            font-weight: 700;
+            letter-spacing: 0;
+            color: #1078AD;
+            margin: 7px 0 0 0;
+            @include mobile {
+                display: block;
+                font-size: 19px;
+                width: 65%;
+                margin-left: auto;
+                margin-right: auto;
+            }
+
         }
        }
       

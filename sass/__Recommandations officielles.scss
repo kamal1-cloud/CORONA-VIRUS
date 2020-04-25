@@ -1,15 +1,19 @@
-/////////////////////////////////////////////////////////////Recommandation officielles////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////Recommandation officielles////////////////////////////////////////////////////////////////////////
 .section3{
     background-color: #1078AD;
     &__title{
         text-align: center;
         color: #D0E5F0;
         padding-top: 2%;
+        font-size: x-large;
     }
     .woot{
         display: flex;
         justify-content: space-between;
          flex-wrap: wrap;
+         @include tablet{
+
+         }
        &__item1{
           &--list{
                list-style: none;
@@ -18,14 +22,29 @@
               font-weight: bolder;
               font-size: large;
               @include mobile(){
-              text-align: center;  
-             padding: 0 6px 0;
-            }
-           }
+               
+                padding:0 63px;
+                font-size: small;
+                font-weight: 200;
+         
+               } 
+           
+        }
+        
            &--order{
-               color: #000000;
+             padding-bottom: 5%;
+               font-size: larger;
+               @include mobile{
+                font-size: 15px;
+                text-align: center;
+                
+               }
            }
-       }
+           .fa-exclamation-triangle{
+            color: #F4CF1B;
+            padding-right: 12px;
+        }
+    }
        &__item2{
         display: flex;
         flex-direction: column;
