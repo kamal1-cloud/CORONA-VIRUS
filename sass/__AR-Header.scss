@@ -28,7 +28,7 @@
         position: absolute;  
         right: 170px;
          bottom: 38px;
-        color: #1A519E;
+        // color: #1A519E;
         font-size: x-large;
         font-weight: bolder;
         &--link1{
@@ -39,23 +39,30 @@
             right: 100px;
             bottom: 40px;
         }
-       
+        a{
+            text-decoration: none;
+        }
     }
     &__para2{
         z-index: 4;
         position: absolute;
         right: 290px;
         bottom: 38px;
+        font-weight: bold;
         font-size: x-large;
-        &--link2{
-            text-decoration: none;
-        }
+        
         @include mobile(){
             font-size: medium;
             right: 170px;
             bottom: 40px;
            
         }
+        a{
+            text-decoration: none;
+            font-weight: bold;
+            color: #1078AD;
+        }
+       
    } 
    &__button{
     border: 2px solid #1A519E;
@@ -63,9 +70,9 @@
     z-index: 4;
     position: absolute;
     right: 40px;
-    top: 30px;
-    width: 90px;
-    height: 40px;
+    top: 27px;
+    width: 100px;
+    height: 45px;
     border-radius: 15px;
     -webkit-border-radius: 15px;
     -moz-border-radius: 15px;
@@ -84,12 +91,14 @@
         padding-bottom: 12px;
         font-weight: bolder;
         font-size: large;
+        padding-top: 8px;
         @include mobile(){
            color: #fff;
         }
     }
     &--img{
         padding-left: 9px;
+        padding-top: 8px;
     }
 }
 
