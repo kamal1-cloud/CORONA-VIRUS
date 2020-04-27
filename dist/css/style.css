@@ -12,7 +12,7 @@ body {
 
 .header__img1 {
   width: 100%;
-  height: 110px;
+  height: 100px;
 }
 
 @media (max-width: 400px) {
@@ -25,13 +25,13 @@ body {
   position: absolute;
   z-index: 2;
   left: 30px;
-  top: 10px;
+  top: 9px;
 }
 
 @media (max-width: 400px) {
   .header__img-logo {
     width: 20%;
-    height: 80%;
+    height: 70%;
     left: 10px;
     top: 10px;
   }
@@ -57,6 +57,10 @@ body {
     right: 100px;
     bottom: 40px;
   }
+}
+
+.header__para1 a {
+  text-decoration: none;
 }
 
 .header__para2 {
@@ -85,9 +89,10 @@ body {
   z-index: 4;
   position: absolute;
   right: 40px;
-  top: 35px;
-  width: 90px;
-  height: 40px;
+  top: 22px;
+  width: 100px;
+  height: 45px;
+  padding-bottom: 20px;
   border-radius: 15px;
   -webkit-border-radius: 15px;
   -moz-border-radius: 15px;
@@ -106,9 +111,9 @@ body {
 
 .header__button--link {
   text-decoration: none;
-  padding-bottom: 12px;
+  padding-bottom: 20px;
   font-weight: bolder;
-  font-size: large;
+  font-size: x-large;
 }
 
 @media (max-width: 400px) {
@@ -119,6 +124,7 @@ body {
 
 .header__button--img {
   padding-left: 9px;
+  padding-top: 8px;
 }
 
 .part2__orange {
@@ -145,8 +151,10 @@ body {
 
 .part2__orange--pg1 {
   text-align: center;
-  line-height: 5px;
-  font-size: 14px;
+  line-height: 34px;
+  font-size: 16px;
+  font-weight: bold;
+  margin: 0;
 }
 
 @media (max-width: 400px) {
@@ -362,6 +370,7 @@ body {
   background: url(/Images/btn-2.png);
   align-items: center;
   border: 2px solid #1078AD;
+  text-decoration: none;
   width: 600px;
   height: 50px;
   display: block;
@@ -370,11 +379,17 @@ body {
   margin-bottom: 10%;
   color: #fff;
   font-size: xx-large;
+  transition-duration: 0.3s;
   border-radius: 10px;
   -webkit-border-radius: 10px;
   -moz-border-radius: 10px;
   -ms-border-radius: 10px;
   -o-border-radius: 10px;
+}
+
+.part3__half2--button:hover {
+  background-color: #1078AD;
+  color: #fff;
 }
 
 @media (max-width: 400px) {
@@ -389,6 +404,14 @@ body {
     width: 90%;
     margin-right: 5%;
   }
+}
+
+.part3__half2 a {
+  text-decoration: none;
+}
+
+.part3__half2 a:hover {
+  color: #fff;
 }
 
 /****************************************************************HERO HERDER**********************************************************************/
@@ -428,7 +451,6 @@ body {
   position: absolute;
   right: 170px;
   bottom: 38px;
-  color: #1A519E;
   font-size: x-large;
   font-weight: bolder;
 }
@@ -445,16 +467,17 @@ body {
   }
 }
 
+.head-ar__para1 a {
+  text-decoration: none;
+}
+
 .head-ar__para2 {
   z-index: 4;
   position: absolute;
   right: 290px;
   bottom: 38px;
+  font-weight: bold;
   font-size: x-large;
-}
-
-.head-ar__para2--link2 {
-  text-decoration: none;
 }
 
 @media (max-width: 400px) {
@@ -465,15 +488,21 @@ body {
   }
 }
 
+.head-ar__para2 a {
+  text-decoration: none;
+  font-weight: bold;
+  color: #1078AD;
+}
+
 .head-ar__button {
   border: 2px solid #1A519E;
   background: #96c3db;
   z-index: 4;
   position: absolute;
   right: 40px;
-  top: 30px;
-  width: 90px;
-  height: 40px;
+  top: 27px;
+  width: 100px;
+  height: 45px;
   border-radius: 15px;
   -webkit-border-radius: 15px;
   -moz-border-radius: 15px;
@@ -496,6 +525,7 @@ body {
   padding-bottom: 12px;
   font-weight: bolder;
   font-size: large;
+  padding-top: 8px;
 }
 
 @media (max-width: 400px) {
@@ -506,6 +536,7 @@ body {
 
 .head-ar__button--img {
   padding-left: 9px;
+  padding-top: 8px;
 }
 
 .sec-part__orange {
@@ -1210,7 +1241,7 @@ body {
   text-align: center;
   color: #D0E5F0;
   padding-top: 2%;
-  font-size: x-large;
+  font: Bold 35px/35px Cairo;
 }
 
 .section3 .woot {
@@ -1471,19 +1502,29 @@ body {
   margin-left: auto;
   margin-right: auto;
   border-radius: 10px;
+  color: #fff;
   -webkit-border-radius: 10px;
   -moz-border-radius: 10px;
   -ms-border-radius: 10px;
   -o-border-radius: 10px;
-  color: #fff;
   font-weight: bolder;
   font-size: large;
+}
+
+.section4__button:hover {
+  background-color: #1078AD;
+  color: #fff;
 }
 
 @media (max-width: 400px) {
   .section4__button {
     width: 90%;
   }
+}
+
+.section4__button a {
+  text-decoration: none;
+  color: #ffffff;
 }
 
 footer .logo {

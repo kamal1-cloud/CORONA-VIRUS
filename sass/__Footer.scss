@@ -29,17 +29,25 @@
         margin-left:auto;
         margin-right: auto;
         border-radius: 10px;
-        
+        color: #fff;
         -webkit-border-radius: 10px;
         -moz-border-radius: 10px;
         -ms-border-radius: 10px;
         -o-border-radius: 10px;
-        color: #fff;
+        
         font-weight: bolder;
         font-size: large;
+        &:hover{
+            background-color: #1078AD;
+            color: #fff;
+        }
         @include mobile()
 {
            width: 90%;
+        }
+        a{
+            text-decoration: none;
+            color: #ffffff;
         }
         
 }

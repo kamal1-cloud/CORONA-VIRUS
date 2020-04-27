@@ -5,7 +5,7 @@
    
     &__img1{
         width: 100%;
-        height: 110px;
+        height: 100px;
         @include mobile(){
         height: 100px;
     } 
@@ -14,10 +14,10 @@
         position: absolute;
         z-index: 2;
         left: 30px;
-        top: 10px; 
+        top: 9px; 
         @include mobile(){
             width: 20%;
-            height: 80%;
+            height: 70%;
             left: 10px;
              top: 10px; 
         }
@@ -38,7 +38,9 @@
             right: 100px;
             bottom: 40px;
         }
-       
+       a{
+           text-decoration: none;
+       }
     }
     &__para2{
         z-index: 4;
@@ -62,9 +64,10 @@
     z-index: 4;
     position: absolute;
     right: 40px;
-    top: 35px;
-    width: 90px;
-    height: 40px;
+    top: 22px;
+    width: 100px;
+    height: 45px;
+    padding-bottom: 20px;
     border-radius: 15px;
     -webkit-border-radius: 15px;
     -moz-border-radius: 15px;
@@ -78,16 +81,19 @@
     }
     
     &--link{
+       
         text-decoration: none;
-        padding-bottom: 12px;
+        padding-bottom: 20px;
         font-weight: bolder;
-        font-size: large;
+        font-size: x-large;
+        
         @include mobile(){
            color: #fff;
         }
     }
     &--img{
         padding-left: 9px;
+        padding-top: 8px;
     }
 }
 
@@ -119,8 +125,10 @@
 &--pg1{
 
   text-align: center;
-   line-height: 5px;
-   font-size: 14px;
+   line-height: 34px;
+   font-size: 16px;
+   font-weight: bold;
+   margin: 0;
    @include mobile{
     line-height: 20px;
     margin: 0 10px ;
@@ -287,6 +295,7 @@
      background: url(/Images/btn-2.png);
     align-items: center;
     border: 2px solid #1078AD;
+    text-decoration: none;
     width: 600px;
     height: 50px;
     display: block;
@@ -295,7 +304,12 @@
     margin-bottom: 10%;
     color: #fff;
     font-size: xx-large;
-  
+    transition-duration: 0.3s;
+  &:hover{
+      background-color: #1078AD;
+      color: #fff;
+      
+  }
     @include mobile(){
                 width: 90%;
               margin-right: 5%;
@@ -309,6 +323,14 @@
     -moz-border-radius: 10px;
     -ms-border-radius: 10px;
     -o-border-radius: 10px;
+}
+a{
+    text-decoration: none;
+    // color: #fff;
+&:hover{
+    color: #fff;
+   
+}
 }
 }
 
