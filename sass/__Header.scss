@@ -5,7 +5,7 @@
    
     &__img1{
         width: 100%;
-        height: 140px;
+        height: 110px;
         @include mobile(){
         height: 100px;
     } 
@@ -14,7 +14,7 @@
         position: absolute;
         z-index: 2;
         left: 30px;
-        top: 16px; 
+        top: 10px; 
         @include mobile(){
             width: 20%;
             height: 80%;
@@ -26,7 +26,7 @@
         z-index: 4;
         position: absolute;  
         right: 170px;
-        bottom: 60px;
+        bottom: 43px;
         color: #1A519E;
         font-size: x-large;
         font-weight: bolder;
@@ -44,7 +44,7 @@
         z-index: 4;
         position: absolute;
         right: 270px;
-        bottom: 60px;
+        bottom: 43px;
         font-size: x-large;
         &--link2{
             text-decoration: none;
@@ -62,7 +62,7 @@
     z-index: 4;
     position: absolute;
     right: 40px;
-    top: 48px;
+    top: 35px;
     width: 90px;
     height: 40px;
     border-radius: 15px;
@@ -142,13 +142,13 @@
    display: flex;
    justify-content: center;
    direction: rtl ;
- margin-top: 1%;
+   margin-top: 1%;
   @include mobile(){
       flex-wrap: wrap;
   }
 
    &__half1{
-       
+       max-width: 50%;
     &--img1{
         width: 44vw;
         margin-top: 5%;
@@ -168,7 +168,7 @@
     }
 }
   &__half2{
-    width: 600px;
+    width: 50%;
     @include mobile(){
         width: 100%;
     }
@@ -177,10 +177,13 @@
     }
     &--img2{
     
-        width: 50px;
-        height: 50px;
+        width: 70px;
+        height: 70px;
         margin-top: 1%;
-        margin-right: 45%;
+        margin-bottom: 2%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
         @include mobile(){
             margin-right: 41%;
             width: 60px;
@@ -191,12 +194,11 @@
        
      }
     &--1{
-       
+        width: 100%;
         color: #1078AD;
         text-align: center;
         font-size: 30px;
         font-weight: bolder;
-        width: 100%;
        line-height: 40px;
         
         @include mobile(){
@@ -210,7 +212,7 @@
         }
     }
     &--2{
-       
+        width: 100%;
         font-weight: bold;
         color: #7F7F7F;
         font-size: 26px;
@@ -226,6 +228,7 @@
         }
     }
     &--3{
+        width: 100%;
         margin: 0;
         font-weight: bold;
         font-size: 26px;
@@ -244,6 +247,7 @@
         }
     }
     &--4{
+        width: 100%;
         margin: 0;
         font-weight: bold;
         font-size: 26px;
@@ -262,11 +266,13 @@
         }
     }
     &--5{
+        width: 100%;
         margin: 0;
         font-weight: bold;
         font-size: 26px;
         color: #7F7F7F;
         text-align: center;
+        margin-bottom: 20px;
         @include mobile(){
            line-height: 34px;
            font-size: small;
@@ -283,7 +289,9 @@
     border: 2px solid #1078AD;
     width: 600px;
     height: 50px;
-    
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
     margin-bottom: 10%;
     color: #fff;
     font-size: xx-large;

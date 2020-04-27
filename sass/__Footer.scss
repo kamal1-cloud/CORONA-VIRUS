@@ -4,18 +4,14 @@
     background-color: #96C5DC;
     height: 100%;
     padding: 20px;
-    //  @include mobile{
-    //     height: 33vh;
-    // }
-    // @include tablet{
-    //     height: 18vh;
-    // }
-   
+
     &__title{
         text-align: center;
         color: #1078AD;
         margin: 0;
         padding-top: 1%;
+        font-size: 26px;
+        font-weight: 800;
     }
     &__emoji{
         padding-top: 20px;
@@ -55,7 +51,7 @@ footer{
     margin-left: auto;
     margin-right: auto;
      padding-top: 2%;
-     margin-bottom: 2%;
+     margin-bottom: 4%;
    }
    .footer{
        display: flex;
@@ -78,7 +74,7 @@ footer{
               
                width: 94px;
                height: 40px;
-               border: 1px solid #1078AD;
+               border: 2px solid #1078AD;
                background-color: #fff;
                border-radius: 15px;
                -webkit-border-radius: 10px;
