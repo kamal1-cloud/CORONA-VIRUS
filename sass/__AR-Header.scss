@@ -1,0 +1,314 @@
+////////////////////////////////////////////////////////////HEADER HEADER////////////////////////////////////////////////////////////////
+/****************************************************************HERO HERDER**********************************************************************/
+.head-ar{
+    position: relative;
+   
+    &__nav-i{
+        width: 100%;
+        height: 100px;
+        @include mobile(){
+        height: 80px;
+    } 
+}
+  
+    &__img-logo{
+        position: absolute;
+        z-index: 2;
+        left: 30px;
+        top: 9px; 
+        @include mobile(){
+            width: 20%;
+            height: 80%;
+            left: 10px;
+             top: 10px; 
+        }
+    }
+    &__para1{
+        z-index: 4;
+        position: absolute;  
+        right: 170px;
+         bottom: 38px;
+        color: #1A519E;
+        font-size: x-large;
+        font-weight: bolder;
+        &--link1{
+            text-decoration: none;
+        }
+        @include mobile(){
+            font-size: medium;
+            right: 100px;
+            bottom: 40px;
+        }
+       
+    }
+    &__para2{
+        z-index: 4;
+        position: absolute;
+        right: 290px;
+        bottom: 38px;
+        font-size: x-large;
+        &--link2{
+            text-decoration: none;
+        }
+        @include mobile(){
+            font-size: medium;
+            right: 170px;
+            bottom: 40px;
+           
+        }
+   } 
+   &__button{
+    border: 2px solid #1A519E;
+    background: #96c3db;
+    z-index: 4;
+    position: absolute;
+    right: 40px;
+    top: 30px;
+    width: 90px;
+    height: 40px;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+    display: flex;
+    @include mobile(){
+        width: 80px;
+        height: 40px;
+        right: 10px;
+        top: 31px;
+    }
+    
+    &--link{
+        text-decoration: none;
+        padding-bottom: 12px;
+        font-weight: bolder;
+        font-size: large;
+        @include mobile(){
+           color: #fff;
+        }
+    }
+    &--img{
+        padding-left: 9px;
+    }
+}
+
+
+}
+/////////////////////////////////////////////////////////////////////////////////////
+
+//*************************************************************PART 2 TOP HEADER*****************************************************/
+.sec-part{
+    
+&__orange{
+    position: relative;
+    width: auto;
+    height: auto;
+    background-color: #F4CF1B;
+    bottom: 16px;
+    padding: 14px;
+&--title{
+    font-size: 28px;
+    text-align: center;
+   color: #1078AD;
+  padding: 0;
+  margin: 0;
+  @include mobile{
+    font-size: 22px; 
+   
+  }
+}
+
+  &--p-1{
+
+    text-align: center;
+     line-height: 25px;
+     font-size: 14px;
+     margin: 0;
+     font-weight: bold;
+     @include mobile{
+      line-height: 20px;
+      margin: 0 10px ;
+    }
+  
+  }
+
+}
+
+}
+/******************************************************************FIN HERO HEADER*********************************************************************/
+
+/*****************************************************************DEBUT 2EME PARTIE HEADER*******************************************************************************/
+.thir-part{
+   display: flex;
+   justify-content: center;
+   margin-top: 1%;
+  @include mobile(){
+      flex-wrap: wrap;
+  }
+
+   &__half1{
+       
+    &--img1{
+        width: 44vw;
+        margin-top: 5%;
+    //    margin-left: 60px;
+      
+       @include mobile(){
+        width: 90%;
+        height: 90%;
+        margin-right: 7%;
+    }
+    @include tablet{
+        width: 80%;
+        margin-right: 5%;
+        margin-top: 15%;
+    }
+
+    }
+}
+  &__half2{
+    width: 46%;
+    @include mobile(){
+        width: 100%;
+    }
+    @include tablet{
+        width: 500px;
+    }
+    &--emoji{
+    
+        width: 70px;
+        height: 70px;
+       display: block;
+       margin-left: auto;
+       margin-right: auto;
+       margin-bottom: 3%;
+        @include mobile(){
+            margin-right: 41%;
+            width: 60px;
+            height: 60px;
+           
+        }
+
+       
+     }
+    &--1{
+       
+        color: #1078AD;
+        text-align: center;
+        font-size: 30px;
+        font-weight: bolder;
+        width: 100%;
+       line-height: 50px;
+        
+        @include mobile(){
+            width: 100%;
+            text-align: center;  
+            font-size: 20px;
+        }
+        @include tablet{
+            width: 100%;
+            font-size: 25px;
+        }
+    }
+    &--2{
+       
+        font-weight: bold;
+        color: #7F7F7F;
+        font-size: 26px;
+        text-align: center;
+         margin: 0 0 8px 0;
+        @include mobile(){
+            margin-bottom: 1%;
+           font-size: small;
+        }
+        @include tablet{
+            width: 100%;
+            font-size: 23px;
+        }
+    }
+    &--3{
+        margin: 0 0 8px 0;
+        font-weight: bold;
+        font-size: 26px;
+        text-align: center;
+        color: #7F7F7F;
+
+        @include mobile(){
+            text-align: center;
+            font-size: small;
+            display: inline;
+           margin-right: 30px;
+        }
+        @include tablet{
+            width: 100%;
+            font-size: 23px;
+        }
+    }
+    &--4{
+        margin: 0 0 8px 0;
+        font-weight: bold;
+        font-size: 26px;
+        text-align: center;
+        color: #7F7F7F;
+
+       
+        @include mobile(){
+            display: inline;
+            font-size: small;
+            padding: 0 6px 10px;
+        }
+        @include tablet{
+            width: 100%;
+            font-size: 23px;
+        }
+    }
+    &--5{
+        margin: 0 0 8px 0;
+        font-weight: bold;
+        font-size: 26px;
+        color: #7F7F7F;
+        text-align: center;
+        margin-bottom: 3%;
+        @include mobile(){
+           line-height: 34px;
+           font-size: small;
+           padding: 0 6px 10px;
+        }
+        @include tablet{
+            width: 100%;
+            font-size: 23px;
+        }
+    }
+    &--button{
+     background: url(/Images/btn-2.png);
+    align-items: center;
+    border: 2px solid #1078AD;
+    width: 600px;
+    height: 50px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10%;
+    color: #fff;
+    font-size: xx-large;
+  
+    @include mobile(){
+                width: 90%;
+              margin-right: 5%;
+            }
+   @include tablet{
+         width: 90%;
+         margin-right: 5%;
+            }
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+}
+
+
+}
+
