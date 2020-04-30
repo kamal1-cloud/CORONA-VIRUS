@@ -66,7 +66,6 @@ footer{
        justify-content: space-around;
        flex-wrap: wrap;
 
-
        &__column1{
          @include mobile(){
              width: 70px;
@@ -82,7 +81,7 @@ footer{
               
                width: 94px;
                height: 40px;
-               border: 2px solid #1078AD;
+                border: 2px solid #1078AD;
                background-color: #fff;
                border-radius: 15px;
                -webkit-border-radius: 10px;
@@ -91,7 +90,6 @@ footer{
                -o-border-radius: 15px;
                box-sizing: border-box;
                
-            
                  }
                  &--para{
                     display: inline;
@@ -109,7 +107,6 @@ footer{
                   
                }  
          
-                 
                  &--p1{
                      color: #1078AD;
                      font-weight: bolder;
@@ -216,7 +213,7 @@ footer{
     top: 90px;
     @include mobile(){
         width: 100%;
-        top: 30px;
+        top: 32px;
 
     }
 }
