@@ -5,6 +5,10 @@
         text-align: center;
         color: #1078AD;
         font: 900 35px/32px Cairo;
+        @include mobile{
+            font: 700 29px/32px Cairo;
+            line-height: 50px;
+        }
     }
     .card{
        display: grid;
@@ -18,7 +22,6 @@
         grid-template-rows: 1fr 1fr;
        }
 
-       
        &__item1{
           grid-column: 1;
           grid-row: 1;
@@ -42,7 +45,6 @@
             }
               }
           
-         
          &--under{
             font-size: 25px;
             font-weight: 700;
@@ -99,7 +101,6 @@
             margin-right: auto;
            
           }
-          
           
         }
        }
@@ -184,7 +185,6 @@
         }
        }
       
-    
     }
 
 }

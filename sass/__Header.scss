@@ -2,12 +2,67 @@
 /****************************************************************HERO HERDER**********************************************************************/
 .header{
     position: relative;
-   
-    &__img1{
+
+    .nav-links {
+        display: flex;
+        list-style: none;
+        width: 50%;
+        height: 100%;
+        justify-content: space-around;
+        align-items: center;
+        margin-left: auto;
+        @include mobile {
+            position: fixed;
+            background: #5b78c7;
+            height: 100vh;
+            width: 100%;
+            flex-direction: column;
+            clip-path: circle(100px at 90% -10%);
+            -webkit-clip-path: circle(100px at 90% -10%);
+            transition: all 1s ease-out;
+            pointer-events: none;
+        }
+      }
+      
+      .nav-links li a {
+        color: white;
+        text-decoration: none;
+        font-size: 16px;
+        @include mobile {
+            font-size: 25px;
+        }
+      }
+      @include mobile {
+        .hamburger {
+            position: absolute;
+            cursor: pointer;
+            right: 5%;
+            top: 50%;
+            transform: translate(-5%, -50%);
+            z-index: 2;
+          }
+          .nav-links li {
+            opacity: 0;
+          }
+          
+          .nav-links li:nth-child(1) {
+            transition: all 0.5s ease 0.2s;
+          }
+          .nav-links li:nth-child(2) {
+            transition: all 0.5s ease 0.4s;
+          }
+          .nav-links li:nth-child(3) {
+            transition: all 0.5s ease 0.6s;
+          }
+          li.fade {
+            opacity: 1;
+          }
+      }
+      &__img1{
         width: 100%;
         height: 100px;
         @include mobile(){
-        height: 100px;
+        height: 80px;
     } 
     }
     &__img-logo{
@@ -16,8 +71,8 @@
         left: 30px;
         top: 9px; 
         @include mobile(){
-            width: 20%;
-            height: 70%;
+            width: 16%;
+            height: 65%;
             left: 10px;
              top: 10px; 
         }
@@ -27,7 +82,7 @@
         position: absolute;  
         right: 170px;
         bottom: 43px;
-        color: #1A519E;
+        color: rgb(0, 0, 0);
         font-size: x-large;
         font-weight: bolder;
         &--link1{
@@ -48,8 +103,11 @@
         right: 270px;
         bottom: 43px;
         font-size: x-large;
+        color: #1A519E;
         &--link2{
             text-decoration: none;
+            // color: rgb(0, 0, 0);
+            font-weight: bold;
         }
         @include mobile(){
             font-size: medium;
@@ -74,10 +132,12 @@
     -ms-border-radius: 15px;
     -o-border-radius: 15px;
     @include mobile(){
-        width: 80px;
+        width: 72px;
         height: 40px;
         right: 10px;
-        top: 31px;
+        top: 14px;
+        padding-top: 8px;
+        padding-right: 10px;
     }
     
     &--link{
@@ -89,11 +149,18 @@
         
         @include mobile(){
            color: #fff;
+           font-size: 16px;
+      
         }
     }
     &--img{
         padding-left: 9px;
         padding-top: 8px;
+        @include mobile {
+            padding-left: 0px;
+            padding-top: 0px;
+            padding-right: 2px;
+        }
     }
 }
 
@@ -156,7 +223,11 @@
   }
 
    &__half1{
-       max-width: 50%;
+      max-width:50% ; 
+      @include mobile{
+        max-width:100% ; 
+      }
+      
     &--img1{
         width: 44vw;
         margin-top: 5%;
@@ -164,8 +235,9 @@
       
        @include mobile(){
         width: 90%;
-        height: 90%;
-        margin-right: 7%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
     }
     @include tablet{
         width: 80%;
@@ -193,13 +265,12 @@
         margin-left: auto;
         margin-right: auto;
         @include mobile(){
-            margin-right: 41%;
-            width: 60px;
-            height: 60px;
+            // margin-right: 41%;
+            width: 50px;
+            height: 50px;
            
         }
 
-       
      }
     &--1{
         width: 100%;
@@ -228,7 +299,7 @@
         margin: 0;
         @include mobile(){
             margin-bottom: 1%;
-           font-size: small;
+            font-size: 14px;
         }
         @include tablet{
             width: 100%;
@@ -245,7 +316,7 @@
 
         @include mobile(){
             text-align: center;
-            font-size: small;
+            font-size: 14px;
             display: inline;
            margin-right: 30px;
         }
@@ -265,8 +336,8 @@
         margin: 0;
         @include mobile(){
             display: inline;
-            font-size: small;
-            padding: 0 6px 10px;
+            font-size: 14px;
+            padding: 0 0 0 5px;
         }
         @include tablet{
             width: 100%;
@@ -283,7 +354,7 @@
         margin-bottom: 20px;
         @include mobile(){
            line-height: 34px;
-           font-size: small;
+           font-size: 14px;
            padding: 0 6px 10px;
         }
         @include tablet{
@@ -311,8 +382,8 @@
       
   }
     @include mobile(){
-                width: 90%;
-              margin-right: 5%;
+                width: 80%;
+            //   margin-right: 5%;
             }
    @include tablet{
          width: 90%;
@@ -329,11 +400,8 @@ a{
     // color: #fff;
 &:hover{
     color: #fff;
-   
 }
 }
 }
 
-
 }
-
