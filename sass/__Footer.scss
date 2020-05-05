@@ -206,14 +206,12 @@ footer{
    }
   
 }
-.bleu{
-    position: relative;
-    width: 100%;
-    height: 30px;
-    top: 90px;
-    @include mobile(){
-        width: 100%;
-        top: 32px;
 
-    }
+.bleu{
+
+    width: 100%;
+    height: 31px;
+    margin-top: 60px;
+     background-color: #1078AD;
+   
 }
