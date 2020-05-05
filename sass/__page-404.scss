@@ -1,0 +1,31 @@
+
+
+.sec-404{
+
+    &__img{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 30px;
+    }
+    &__title{
+        text-align: center;
+        font-size: xxx-large;
+        color: #1078AD;
+    }
+    &__btn{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 330px;
+        height: 40px;
+        background-color: #1078AD;
+        border: 1px solid #1078AD;
+        color: #ffffff;
+        font-weight: bold;
+        font-size: 20px;
+        border-radius: 5px;
+        margin-top: 50px;
+        margin-bottom: 70px;
+    }
+}
