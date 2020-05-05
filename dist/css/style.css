@@ -1833,17 +1833,10 @@ footer .footer__column3--list {
 }
 
 .bleu {
-  position: relative;
   width: 100%;
-  height: 30px;
-  top: 90px;
-}
-
-@media (max-width: 400px) {
-  .bleu {
-    width: 100%;
-    top: 32px;
-  }
+  height: 31px;
+  margin-top: 60px;
+  background-color: #1078AD;
 }
 
 /***************************************************************************************************************************************************/
@@ -2348,6 +2341,35 @@ footer .footer__column3--list {
 
 .visibility {
   visibility: hidden;
+}
+
+.sec-404__img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30px;
+}
+
+.sec-404__title {
+  text-align: center;
+  font-size: xxx-large;
+  color: #1078AD;
+}
+
+.sec-404__btn {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 330px;
+  height: 40px;
+  background-color: #1078AD;
+  border: 1px solid #1078AD;
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 5px;
+  margin-top: 50px;
+  margin-bottom: 70px;
 }
 
 /*# sourceMappingURL=style.css.map */
