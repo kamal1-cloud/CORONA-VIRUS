@@ -1112,13 +1112,9 @@ body {
   background-color: #1078AD;
 }
 
-.zone:disabled {
+.zone__next-btn:disabled {
   cursor: not-allowed;
   opacity: 0.65;
-}
-
-.zone:disabled:hover {
-  background-color: #D0E5F0;
 }
 
 /*-----------------------------------------progress_bare--------------------------------*/
@@ -2291,13 +2287,9 @@ footer .footer__column3--list {
   background-color: #1078AD;
 }
 
-.zone:disabled {
+.zone__next-btn:disabled {
   cursor: not-allowed;
   opacity: 0.65;
-}
-
-.zone:disabled:hover {
-  background-color: #D0E5F0;
 }
 
 /*-----------------------------------------progress_bare--------------------------------*/
