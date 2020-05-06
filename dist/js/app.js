@@ -318,13 +318,14 @@ const previousBtn = document.getElementById('back-btn');
 const progressBar = document.getElementsByClassName('progress');
 const serialPlus = document.querySelector('.question-number');
 const bar = document.querySelector('.bar');
-
+const resuletsTest = document.querySelector('.res-1')
 /*-----------------------------------------event--------------------------------------------*/
 let questionIndex=0;
 testBtn.addEventListener('click', startTest);
  nextBtn.addEventListener('click',nextQuetion);
  selectInputs.addEventListener('change',typeOfButton);
-
+ previousBtn.addEventListener('click', questionprecedent);
+ 
 function startTest(){
     testBtn.classList.add('hide');
     preambule.classList.add('hide');
@@ -335,6 +336,7 @@ function startTest(){
     nextBtn.disabled=true;
 
     controlButtons()
+    
 }
 
 /*:::::::::::::::::::::::::::::::::::::::::::::::::::::::*/
@@ -345,7 +347,7 @@ function typeOfButton(event){
  
 if (input.type === 'number') {
 
-        const number = parseFloat(input.value)
+         const number = parseFloat(input.value)
                     
         if (number >= input.min && number <= input.max) {
 
@@ -355,7 +357,8 @@ if (input.type === 'number') {
 
         }
 
-} else {
+}
+ else {
 
         nextBtn.disabled = false
     }
@@ -368,12 +371,12 @@ function nextQuetion(){
 
     questionIndex++
     showQuestion( questions[questionIndex])
-    progressButtons(questionIndex)
+    progressNum(questionIndex)
 
     nextBtn.disabled=true;
 
     controlButtons()
-
+  
  }
 
 /***************************************************************** */
@@ -404,6 +407,9 @@ function showQuestion(questions){
         <span class="input-span">${questions.input.name}</span>`
         
     }
+    
+    progressNum()
+    finTest()
 
 }
 //--------controle Button précédent-----:
@@ -422,7 +428,7 @@ function controlButtons(){
 
 }
 //---------------------progressButtonsr----------------------:
-function progressButtons(number){
+function progressNum(number){
 
     const addNumber = number + 1 ;
     serialPlus.innerHTML= addNumber ;
@@ -430,3 +436,32 @@ function progressButtons(number){
     bar.style.width =`calc(${addNumber}*calc(100%/22))` 
 
 }
+
+/////////////////////////////////FIN TEST///////////////////////////////////////
+function finTest(){
+
+    if(questionIndex >= 21){
+
+        nextBtn.innerText = 'Terminer le test';
+        scroll[1].classList.remove('sta-sec');  
+        scroll[2].classList.add('sta-sec');
+        partieQuestions.classList.add('hide');
+        resuletsTest.style.display = 'block';
+        testBtn.classList.remove('hide');
+        
+}else{
+
+    nextBtn.innerText = 'Suivant';
+}
+startTest()
+};
+
+
+ function questionprecedent(){
+    questionIndex--
+
+    showQuestion( questions[questionIndex]);
+    progressNum(questionIndex)
+
+    
+};
