@@ -98,8 +98,9 @@
         }
     }
     &--img{
-        padding-left: 9px;
-        padding-top: 8px;
+        position: absolute;
+       width: 40px;
+       top: 20px;
         @include mobile(){
             padding-left: 2px;
             padding-top: 5px;
