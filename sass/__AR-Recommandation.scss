@@ -11,23 +11,24 @@
     }
     .wo-ar{
         display: flex;
-       justify-content: space-between;
+       justify-content: space-evenly;
          flex-wrap: wrap;
          direction: rtl;
          @include tablet{
 
          }
        &__item1{
-           width: 50%;
+        
           &--list{
                list-style: none;
                line-height: 45px;
                color: #fff;
-              font-weight: bolder;
+               font-size: 16px;
+               font-weight: 510;
               font-size: large;
               width: 100%;
               @include mobile(){
-               
+                width: 70%;
                 padding:0 63px;
                 font-size: small;
                 font-weight: 200;
@@ -36,15 +37,22 @@
            
         }
         
+         &--cl {
+            display: flex;
+        }
            &--order{
                padding-bottom: 2%;
                padding-right: 5%;
+               font-size: bolder;
                font-size: larger;
                width: 100%;
                @include mobile{
                 font-size: 15px;
                 text-align: center;
-               
+                font-weight: bold;
+               display: block;
+               margin-left: auto;
+               margin-right: auto;
                }
            }
            .fa-exclamation-triangle:before {
@@ -52,15 +60,17 @@
             padding-left: 15px;
             color: #F4CF1B;
         }
+       
     }
        &__item2{
         display: flex;
         flex-direction: column;
         text-align: center;
-        flex: 50%;
-        margin-top: 3%;
+        // flex: 10%;
+        width: 25%;
+  
         @include mobile(){
-            margin-top: 0%;
+            width: 100%;
         }
 
         &--title{
@@ -83,6 +93,7 @@
             font-size: x-large;
             color: #1078AD;
             border-radius: 5px;
+            margin-bottom: 2%;
             -webkit-border-radius: 5px;
             -moz-border-radius: 5px;
             -ms-border-radius: 5px;
@@ -93,7 +104,7 @@
            
              }
              &--href{
-                margin-top: 20px;
+                 margin-top: 17x;
                  color: #fff;
                  font-weight: bold;
                 text-align: center;
