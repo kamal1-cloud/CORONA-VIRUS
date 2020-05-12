@@ -70,6 +70,8 @@
         z-index: 2;
         left: 30px;
         top: 9px; 
+        width: auto;
+            height: 65%;
         @include mobile(){
             width: auto;
             height: 65%;
