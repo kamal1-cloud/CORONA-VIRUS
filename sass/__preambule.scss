@@ -20,14 +20,25 @@
     }
         &--para1{
            text-align: center;
+           @include mobile {
+            text-align: justify;
+            text-align-last: center;
+           }
   
     }
         &--para2{
            text-align: center;
+           @include mobile {
+            text-align: justify;
+            text-align-last: center;
+           }
 
     }
     &--line{
         width: 50%;
+        @include mobile {
+            width: 95%; 
+        }
 
     }
     

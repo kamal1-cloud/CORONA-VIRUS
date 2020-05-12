@@ -71,7 +71,7 @@
         left: 30px;
         top: 9px; 
         @include mobile(){
-            width: 16%;
+            width: auto;
             height: 65%;
             left: 10px;
              top: 10px; 
@@ -80,7 +80,7 @@
     &__para1{
         z-index: 4;
         position: absolute;  
-        right: 170px;
+        right: 140px;
         bottom: 43px;
         color: rgb(0, 0, 0);
         font-size: x-large;
@@ -100,7 +100,7 @@
     &__para2{
         z-index: 4;
         position: absolute;
-        right: 270px;
+        right: 260px;
         bottom: 43px;
         font-size: x-large;
         color: #1A519E;
@@ -117,28 +117,7 @@
         }
    } 
    &__button{
-    border: 2px solid #1A519E;
-    background: #96c3db;
-    z-index: 4;
-    position: absolute;
-    right: 40px;
-    top: 22px;
-    width: 100px;
-    height: 45px;
-    padding-bottom: 20px;
-    border-radius: 15px;
-    -webkit-border-radius: 15px;
-    -moz-border-radius: 15px;
-    -ms-border-radius: 15px;
-    -o-border-radius: 15px;
-    @include mobile(){
-        width: 72px;
-        height: 40px;
-        right: 10px;
-        top: 14px;
-        padding-top: 8px;
-        padding-right: 10px;
-    }
+   
     
     &--link{
        
@@ -156,10 +135,16 @@
     &--img{
         padding-left: 9px;
         padding-top: 8px;
+        width: 50px;
+        height: 50px;
+        position: absolute;
+        right: 40px;
+        top: 16px;
         @include mobile {
-            padding-left: 0px;
-            padding-top: 0px;
-            padding-right: 2px;
+            width: 35px;
+           height: 35px;
+           right: 40px;
+            top: 9px;
         }
     }
 }
@@ -319,6 +304,7 @@
             font-size: 14px;
             display: inline;
            margin-right: 30px;
+           
         }
         @include tablet{
             width: 100%;

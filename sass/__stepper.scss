@@ -111,6 +111,7 @@
 
 .answer-inputs {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
     height: 50%;
@@ -186,28 +187,6 @@
     }
 }
 
-// .start{
-
-//     background-color: #D0E5F0;
-        
-//     border-radius: 5px;
-//     border:2px solid #1078AD; 
-//     width: 20%;
-//     height: 50px;
-//     font-size: 25px;
-//     color: white;
-//     display: block;
-//     margin : auto;
-//     margin-top: 1.5%;
-//     transition: background-color 2s ease-out;
-//     outline: none;
-//     margin-bottom: 5%;
-// }
-
-// .start:hover{
-
-//     background-color: #1078AD ;
-// }
 
 /*-----------------------------------------progress_bare--------------------------------*/
 
@@ -278,6 +257,7 @@
         color:  white;
         float:left;
         outline: none;  
+        width: 120px;
 
         &:hover{
             background-color: #1078AD;
@@ -293,7 +273,7 @@
             color:  white;
             float:right;
             outline: none;  
-
+            width: 120px;
             &:hover{
                 background-color: #1078AD;
             }
