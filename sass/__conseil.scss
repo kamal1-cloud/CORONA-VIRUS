@@ -1,77 +1,116 @@
 /***************************************************************************************************************************************************/
 
 /******************************************************************DUBET SECTION CONSEIL*****************************************************************/
-.conseil{
-    &__title{
-        text-align: center;
-        color: $primary-color;
+// .conseil{
+//     &__title{
+//         text-align: center;
+//         color: $primary-color;
         
-    }
-.container{
-    .card1{
-        display: flex;
-        flex-direction: row;
-       justify-content: space-evenly;
-       flex-wrap: wrap;
-       margin-top: 5%;
-       @include mobile(){
-           justify-content: space-around;
-       }
-       &__item1{
-        text-align: center;
-        margin-top: 30px;
-       padding-left: 10px;
-       font-weight: bolder;
-       font-size: large ;
-       color: $second-color;
-       }
-       &__item2{
-        text-align: center;
-        font-weight: bolder;
-        font-size: large ;
-        color: $second-color;
-        width: 400px;
-        margin-top: -10px;
-       }
-       &__item3{
-        text-align: center;
-        font-weight: bolder;
-        font-size: large ;
-        color: $second-color;
-       }
-    }
-    .card2{
-        margin-top: 4%;
-        display: flex;
-        flex-direction: row;
-       justify-content: space-around;
-       flex-wrap: wrap;
-       &__item{
-      
-        text-align: center;
-        font-weight: bolder;
-        font-size: large ;
-        color: $second-color;
-        
-       }
-    }
-  .card3{
-    margin-top: 3%;
-      display: flex;
-      flex-direction: column;
-      margin-left: 6%;
-      flex-wrap: wrap;
-      &__item{
-        text-align: center;
-        font-weight: bolder;
-        font-size: large ;
-        color: $second-color;
-        padding: 0 20px 0 0;
-      }
-  }
+//     }
+// .container{
+//     @include mobile {
+//         display: flex;
+//         p{
+//             font-size: 14px;
+//         }
+//     }
    
-}
-}
+//     .card1{
+//         display: flex;
+//         flex-direction: row;
+//        justify-content: space-evenly;
+//        flex-wrap: wrap;
+//        margin-top: 5%;
+//        @include mobile {
+//            flex-direction: column;
+//            max-width: 50%;
+//            img{
+//             width: 90px;
+//         }
+//        }
+//        @include mobile(){
+//            justify-content: space-around;
+//        }
+//        &__item1{
+//         text-align: center;
+//         margin-top: 30px;
+//        padding-left: 10px;
+//        font-weight: bolder;
+//        font-size: large ;
+//        color: $second-color;
+//        @include mobile {
+//            width: 100%;
+//            padding: 20px;
+//        }
+//        }
+//        &__item2{
+//         text-align: center;
+//         font-weight: bolder;
+//         font-size: large ;
+//         color: $second-color;
+//         width: 400px;
+//         margin-top: -10px;
+//         @include mobile {
+//             width: 100%;
+//             padding: 20px;
+//         }
+//        }
+//        &__item3{
+//         text-align: center;
+//         font-weight: bolder;
+//         font-size: large ;
+//         color: $second-color;
+//         @include mobile {
+//             width: 100%;
+//             padding: 20px;
+//         }
+//        }
+//     }
+//     .card2{
+//         margin-top: 4%;
+//         display: flex;
+//         flex-direction: row;
+//        justify-content: space-around;
+//        flex-wrap: wrap;
+//        @include mobile{
+//            max-width: 50%;
+//            margin-top: 20px;
+//            img{
+//             width: 90px;
+//         }
+      
+//        }
+
+//        &__item{
+      
+//         text-align: center;
+//         font-weight: bolder;
+//         font-size: large ;
+//         color: $second-color;
+//         @include mobile{
+//             padding: 20px;
+//         }
+        
+//        }
+//     }
+//   .card3{
+//     margin-top: 3%;
+//       display: flex;
+//       flex-direction: column;
+//       margin-left: 6%;
+//       flex-wrap: wrap;
+//       flex: none;
+//       &__item{
+//         text-align: center;
+//         font-weight: bolder;
+//         font-size: large ;
+//         color: $second-color;
+//         padding: 0 20px 0 0;
+//       }
+//   }
+   
+// }
+// }
 /********************************************************************************************************************************************************************************/
 
 //*******************************************************************************section informations*****************************************************************************//
