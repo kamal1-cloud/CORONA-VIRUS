@@ -60,148 +60,140 @@ footer{
     margin-right: auto;
      padding-top: 2%;
      margin-bottom: 4%;
+     @include mobile{
+         width: 60px;
+         height: auto;
+     }
    }
    .footer{
-       display: flex;
-       justify-content: space-around;
-       flex-wrap: wrap;
-
+      display: flex;
+       justify-content: space-evenly;
+       direction: rtl;
        &__column1{
-         @include mobile(){
-             width: 70px;
-             margin-top: 2%;
+        display: flex; 
+        flex-direction: column; 
+        margin-top: 5%;   
+        margin-left: 10em;
+        @include mobile {
+            margin-top: 5%;   
+            margin-left: 0em;
+            // margin-right: -1px;
             
-         }
-         @include tablet{
-            margin-top: 1%;
-           
-         }
-         
-           &--button{
-              
-               width: 94px;
-               height: 40px;
-                border: 2px solid #1078AD;
-               background-color: #fff;
-               border-radius: 15px;
-               -webkit-border-radius: 10px;
-               -moz-border-radius: 15px;
-               -ms-border-radius: 15px;
-               -o-border-radius: 15px;
-               box-sizing: border-box;
-               
-                 }
-                 &--para{
-                    display: inline;
-                    text-align: center;
-                    padding-left: 10px;
-                    padding-bottom: 30px;
-                    font-weight: bolder;
-                  
-                 }
-                
-                 &--img{
-                    display: inline-block;
-                    padding-top: 8px;
-                    padding-left: 10px;
-                  
-               }  
-         
+        }
                  &--p1{
                      color: #1078AD;
-                     font-weight: bolder;
-                     font-size: large;
-                     @include mobile(){
+                     font-weight: 500;
+                     font-size: x-large;
+                     border-bottom: 1px solid rgba(16, 121, 173, 0.5) !important;
+                      width: 400px;
                      text-align: center;
-                    }
+                     list-style: none;
+                     padding-bottom: 2px;
+                   @include mobile {
+                    width: 150px;
+                    font-weight: 500;
+                     font-size: 22px;
+                   }
+                   
                  }
                  &--p2{
-                    
-                    font-weight: bolder;
-                    font-size: large;
+                    border-bottom: 1px solid rgba(16, 121, 173, 0.5) !important;   
+                    color: #2B2B2C;
+                    font-size: 23px;
+                   
+                    text-align: center;
+                    list-style: none;
+                    padding-bottom: 2px;
+                    padding-top: 2px;
                     @include mobile(){
                         text-align: center;
+                        width: 150px;
                        }
+                }
+                &--a1{
+                    text-decoration: none;
+                    margin: 0;
+                    &:active{
+                        color: #1078AD !important;
+                        font-weight: 700 !important;
+                    }
+                
+                }
+                &--a2{
+                    text-decoration: none;
+                    margin: 0;
+                }
+                ul{
+                    @include mobile {
+                        padding-inline-start: 20px;
+                    }
                 }
        }
 
     &__column2{
         text-align: center;
-        @include mobile(){
+         margin-left: 8em;
+        @include mobile{
             width: 60%;
             text-align: center;
-            margin-left: 1%;
+            margin-left: 0em;
+            margin-right: 3%;
+
         }
         
         &--title{
-             margin: 0;
+             margin: 10px;
              color: #1078AD;
-             font-weight: bolder;
-             font-size: large;
+             font-size: 1.5em;
+             font-weight: 700;
              text-align: center;
+             @include mobile {
+                font-size: 1.2em;
+                font-weight: 500;
+             }
         }
         &--p1{
-            font-size: smaller;
+            font-family: 'Cairo', sans-serif;
+            font-size: 0.9em;
+            font-weight: 700;
+            color: #2B2B2C;
+            margin: 0;
+            @include mobile {
+                font-size: 0.7em;
+                font-weight: 600;
+                width: 70%;
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+            }
         }
         &--num{
+            font-size: 1.6em;
+            font-weight: 700;
             color: #369D53;
-            font-weight: bolder;
+            margin: 0;
+            @include mobile {
+                font-size: 1em;
+            }
+        }
+        &--p2{
+            font-family: 'Cairo', sans-serif;
+            font-size: 0.9em;
+            font-weight: 700;
+            color: #2B2B2C;
+            margin: 0;
+            @include mobile {
+                font-size: 0.7em;
+                font-weight: 600;
+                width: 70%;
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+            }
         }
 
     }
 
-    &__column3{
-     
-        &--list{
-            list-style: none;
-            line-height: 30px;
-            color: #7F7F7F;
-            font-size: 14px;
-            @include mobile(){
-               padding: 0 6px 0 6px;
-               text-align: center;
-            }
-            @include tablet{
-                text-align: center;
-            }
-        
-    }
-        &--list1{
-            @include mobile(){
-                display: inline;
-               
-        }
-        @include tablet{
-            display: inline;
-        }
-            
-        }
-        &--list2{
-            @include mobile(){
-                display: inline;
-               margin-right: 10%;
-        }
-        @include tablet{
-            display: inline;
-        }
-    }
-        &--list3{
-            @include mobile(){
-                display: inline;
-               
-        }
-    }
-        &--list4{
-            @include mobile(){
-                display: inline;
-               
-        }
-        @include tablet{
-            display: inline;
-        }
-        }
-    
-    }
     
    }
   
