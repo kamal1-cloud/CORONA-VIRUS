@@ -74,15 +74,15 @@
             height: 65%;
         @include mobile(){
             width: auto;
-            height: 65%;
+            height: 50%;
             left: 10px;
-             top: 10px; 
+            top: 13px;
         }
     }
     &__para1{
         z-index: 4;
         position: absolute;  
-        right: 140px;
+        right: 130px;
         bottom: 43px;
         color: rgb(0, 0, 0);
         font-size: x-large;
@@ -102,7 +102,7 @@
     &__para2{
         z-index: 4;
         position: absolute;
-        right: 260px;
+        right: 240px;
         bottom: 43px;
         font-size: x-large;
         color: #1A519E;
@@ -135,18 +135,16 @@
         }
     }
     &--img{
-        padding-left: 9px;
-        padding-top: 8px;
         width: 50px;
-        height: 50px;
+        height: auto;
         position: absolute;
         right: 40px;
-        top: 16px;
+        top: 22px;
         @include mobile {
             width: 35px;
-           height: 35px;
+        height: auto;
            right: 40px;
-            top: 9px;
+            top: 16px;
         }
     }
 }
