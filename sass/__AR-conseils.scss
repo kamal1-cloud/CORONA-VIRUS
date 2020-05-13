@@ -5,7 +5,8 @@
         color: $primary-color;
         font-size: xx-large;
         @include mobile {
-            font-size: x-large;
+            font-size: large;
+            font-weight: bolder;
         }
     }
 .AR-csl-container{

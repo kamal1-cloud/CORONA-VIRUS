@@ -7,7 +7,7 @@
         width: 100%;
         height: 100px;
         @include mobile(){
-        height: 80px;
+            height: 60px;
     } 
 }
   
@@ -18,9 +18,9 @@
         top: 9px; 
         @include mobile(){
             width: auto;
-            height: 65%;
+            height: 60%;
             left: 10px;
-             top: 10px; 
+             top: 6px; 
         }
     }
     &__para1{
@@ -36,8 +36,8 @@
         }
         @include mobile(){
             font-size: medium;
-            right: 100px;
-            bottom: 40px;
+            right: 83px;
+            bottom: 28px;
         }
         a{
             text-decoration: none;
@@ -52,8 +52,8 @@
         font-size: x-large;
         @include mobile(){
             font-size: medium;
-            right: 170px;
-            bottom: 40px;
+            right: 160px;
+            bottom: 28px;
            
         }
         a{
@@ -81,8 +81,9 @@
         top: 20px;
         right: 40px;
         @include mobile(){
-            width: 35px;
-            top: 16px;
+            width: 33px;
+            top: 9px;
+            right: 30px;
          }
     }
 }
