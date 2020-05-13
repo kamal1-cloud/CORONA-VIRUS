@@ -17,7 +17,7 @@
         left: 30px;
         top: 9px; 
         @include mobile(){
-            width: 18%;
+            width: auto;
             height: 65%;
             left: 10px;
              top: 10px; 
@@ -26,8 +26,8 @@
     &__para1{
         z-index: 4;
         position: absolute;  
-        right: 170px;
-         bottom: 38px;
+        right: 130px;
+         bottom: 42px;
         // color: #1A519E;
         font-size: x-large;
         font-weight: bolder;
@@ -46,11 +46,10 @@
     &__para2{
         z-index: 4;
         position: absolute;
-        right: 290px;
-        bottom: 38px;
+        right: 255px;
+        bottom: 42px;
         font-weight: bold;
         font-size: x-large;
-        
         @include mobile(){
             font-size: medium;
             right: 170px;
@@ -65,27 +64,6 @@
        
    } 
    &__button{
-    border: 2px solid #1A519E;
-    background: #96c3db;
-    z-index: 4;
-    position: absolute;
-    right: 40px;
-    top: 27px;
-    width: 100px;
-    height: 45px;
-    border-radius: 15px;
-    -webkit-border-radius: 15px;
-    -moz-border-radius: 15px;
-    -ms-border-radius: 15px;
-    -o-border-radius: 15px;
-    display: flex;
-    @include mobile(){
-        width: 70px;
-        height: 40px;
-        right: 10px;
-        top: 16px;
-    }
-    
     &--link{
         text-decoration: none;
         padding-bottom: 12px;
@@ -98,11 +76,13 @@
         }
     }
     &--img{
-        padding-left: 9px;
-        padding-top: 8px;
+        width: 50px;
+        position: absolute;
+        top: 20px;
+        right: 40px;
         @include mobile(){
-            padding-left: 2px;
-            padding-top: 5px;
+            width: 35px;
+            top: 16px;
          }
     }
 }

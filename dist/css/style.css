@@ -95,16 +95,16 @@ body {
 @media (max-width: 400px) {
   .header__img-logo {
     width: auto;
-    height: 65%;
+    height: 50%;
     left: 10px;
-    top: 10px;
+    top: 13px;
   }
 }
 
 .header__para1 {
   z-index: 4;
   position: absolute;
-  right: 140px;
+  right: 130px;
   bottom: 43px;
   color: black;
   font-size: x-large;
@@ -130,7 +130,7 @@ body {
 .header__para2 {
   z-index: 4;
   position: absolute;
-  right: 260px;
+  right: 240px;
   bottom: 43px;
   font-size: x-large;
   color: #1A519E;
@@ -164,21 +164,19 @@ body {
 }
 
 .header__button--img {
-  padding-left: 9px;
-  padding-top: 8px;
   width: 50px;
-  height: 50px;
+  height: auto;
   position: absolute;
   right: 40px;
-  top: 16px;
+  top: 22px;
 }
 
 @media (max-width: 400px) {
   .header__button--img {
     width: 35px;
-    height: 35px;
+    height: auto;
     right: 40px;
-    top: 9px;
+    top: 16px;
   }
 }
 
@@ -499,7 +497,7 @@ body {
 
 @media (max-width: 400px) {
   .head-ar__img-logo {
-    width: 18%;
+    width: auto;
     height: 65%;
     left: 10px;
     top: 10px;
@@ -509,8 +507,8 @@ body {
 .head-ar__para1 {
   z-index: 4;
   position: absolute;
-  right: 170px;
-  bottom: 38px;
+  right: 130px;
+  bottom: 42px;
   font-size: x-large;
   font-weight: bolder;
 }
@@ -534,8 +532,8 @@ body {
 .head-ar__para2 {
   z-index: 4;
   position: absolute;
-  right: 290px;
-  bottom: 38px;
+  right: 255px;
+  bottom: 42px;
   font-weight: bold;
   font-size: x-large;
 }
@@ -554,32 +552,6 @@ body {
   color: #1078AD;
 }
 
-.head-ar__button {
-  border: 2px solid #1A519E;
-  background: #96c3db;
-  z-index: 4;
-  position: absolute;
-  right: 40px;
-  top: 27px;
-  width: 100px;
-  height: 45px;
-  border-radius: 15px;
-  -webkit-border-radius: 15px;
-  -moz-border-radius: 15px;
-  -ms-border-radius: 15px;
-  -o-border-radius: 15px;
-  display: flex;
-}
-
-@media (max-width: 400px) {
-  .head-ar__button {
-    width: 70px;
-    height: 40px;
-    right: 10px;
-    top: 16px;
-  }
-}
-
 .head-ar__button--link {
   text-decoration: none;
   padding-bottom: 12px;
@@ -596,15 +568,16 @@ body {
 }
 
 .head-ar__button--img {
+  width: 50px;
   position: absolute;
-  width: 40px;
   top: 20px;
+  right: 40px;
 }
 
 @media (max-width: 400px) {
   .head-ar__button--img {
-    padding-left: 2px;
-    padding-top: 5px;
+    width: 35px;
+    top: 16px;
   }
 }
 
@@ -1604,9 +1577,10 @@ body {
   background-color: #F4CF1B;
   border: 1px solid #F4CF1B;
   width: 200px;
-  height: 50px;
+  height: 45px;
   font-weight: bolder;
   font-size: x-large;
+  margin-bottom: 2%;
   color: #1078AD;
   border-radius: 5px;
   margin-bottom: 2%;
